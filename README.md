@@ -55,7 +55,7 @@ interface, and SQL for database management.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/car-rental-system.git
+    git clone https://github.com/anasrazaofficial/car-rental-system.git
     ```
 2. Navigate to the project directory:
     ```bash
