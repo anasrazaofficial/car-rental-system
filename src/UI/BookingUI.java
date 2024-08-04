@@ -174,7 +174,7 @@ public class BookingUI extends JFrame {
             try {
                 Date startDate = dateFormat.parse(startDateString);
                 setVisible(false);
-                new AddBooking(Integer.parseInt(id), customer.split(",")[0], vehicle.split(",")[0], startDate);
+                new AddBooking(Integer.parseInt(id), customer, vehicle, startDate);
             } catch (ParseException e) {
                 throw new RuntimeException(e);
             }

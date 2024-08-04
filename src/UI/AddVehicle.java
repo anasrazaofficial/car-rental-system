@@ -24,7 +24,7 @@ public class AddVehicle extends JFrame {
     private Integer id = null;
     VehicleService vehicleService = new VehicleService();
 
-    public AddVehicle(Integer id, String name, String color, Integer pricePerDay, String owner_id) {
+    public AddVehicle(Integer id, String name, String color, Integer pricePerDay, String owner) {
         initComponents();
 
         if (id != null) {
@@ -35,7 +35,7 @@ public class AddVehicle extends JFrame {
             txtName.setText(name);
             txtColor.setText(color);
             txtPricePerDay.setText(String.valueOf(pricePerDay));
-            ownerIds.setSelectedItem(owner_id);
+            ownerIds.setSelectedItem(owner);
         } else {
             setTitle("Car Rental System - Add Vehicle");
         }

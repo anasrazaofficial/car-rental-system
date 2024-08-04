@@ -16,7 +16,6 @@ public class DBConnection {
         loadConfig();
         try {
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
-            System.out.println("Database connected successfully!");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

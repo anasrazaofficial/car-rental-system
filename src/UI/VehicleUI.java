@@ -150,7 +150,7 @@ public class VehicleUI extends JFrame {
             String owner = (String) table.getValueAt(selectedRow, 4);
 
             setVisible(false);
-            new AddVehicle(Integer.parseInt(id), name, color, Integer.parseInt(pricePerDay), owner.split(",")[0]);
+            new AddVehicle(Integer.parseInt(id), name, color, Integer.parseInt(pricePerDay), owner);
         } else {
             JOptionPane.showMessageDialog(null, "Please select any row");
         }

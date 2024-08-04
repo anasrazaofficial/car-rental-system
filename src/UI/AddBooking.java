@@ -25,7 +25,7 @@ public class AddBooking extends JFrame {
     private Integer id = null;
     BookingService bookingService = new BookingService();
 
-    public AddBooking(Integer id, String customer_id, String vehicle_id, Date start_date) {
+    public AddBooking(Integer id, String customer, String vehicle, Date start_date) {
         initComponents();
 
         if (id != null) {
@@ -33,8 +33,8 @@ public class AddBooking extends JFrame {
             btnAdd.setText("Update");
 
             this.id = id;
-            customerIds.setSelectedItem(String.valueOf(customer_id));
-            vehicleIds.setSelectedItem(String.valueOf(vehicle_id));
+            customerIds.setSelectedItem(customer);
+            vehicleIds.setSelectedItem(vehicle);
             startDatePicker.setDate(start_date);
         } else {
             setTitle("Car Rental System - Add Booking");
